@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lightbox of selected images for the featured artist</title>
+   <link href="style/style.css" rel="stylesheet" type="text/css" media="all">
+   <link href="style/lightbox.css" rel="stylesheet" type="text/css" media="all">
+   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+</head>
+
+<body>
+
+   <div class="topnav">
+      <a href="#">Home</a>
+      <a href="sketches.html">More Sketches</a>
+      <a href="#">Lightbox</a>
+      <a href="gamingData.html">Gaming Data</a>
+      <a href="quality.html">Quality</a>
+      <a href="archive.html">Archive</a>
+   </div>
+
+   <h2 style="text-align:center">Lightbox</h2>
+   <p class="note">Featured Artist: <a target="_blank" href="http://www.cuttingsketchdesigns.com/">
+         Antonio Stappaerts</a></p>
+   <div style="width: 75%; align-items: center; color: pink">
+      <div class="row-lightbox">
+         <div class="column-lightbox">
+            <img src="/lightboximages/antonio-stappaerts-1.jpg" style="width:100%" onclick="openModal();currentSlide(1)"
+               class="hover-shadow cursor">
+         </div>
+         <div class="column-lightbox">
+            <img src="/lightboximages/antonio-stappaerts-2.jpg" style="width:100%" onclick="openModal();currentSlide(2)"
+               class="hover-shadow cursor">
+         </div>
+         <div class="column-lightbox">
+            <img src="/lightboximages/antonio-stappaerts-3.jpg" style="width:100%" onclick="openModal();currentSlide(3)"
+               class="hover-shadow cursor">
+         </div>
+         <div class="column-lightbox">
+            <img src="/lightboximages/antonio-stappaerts-4.jpg" style="width:100%" onclick="openModal();currentSlide(4)"
+               class="hover-shadow cursor">
+         </div>
+         <div class="column-lightbox">
+            <img src="/lightboximages/antonio-stappaerts-5.jpg" style="width:100%" onclick="openModal();currentSlide(5)"
+               class="hover-shadow cursor">
+         </div>
+         <div class="column-lightbox">
+            <img src="/lightboximages/antonio-stappaerts-6.jpg" style="width:100%" onclick="openModal();currentSlide(6)"
+               class="hover-shadow cursor">
+         </div>
+      </div>
+
+      <div id="myModal" class="modal">
+         <span class="close cursor" onclick="closeModal()">&times;</span>
+         <div class="modal-content">
+
+            <div class="mySlides">
+               <div class="numbertext">1 / 6</div>
+               <img src="/lightboximages/antonio-stappaerts-1.jpg" style="width:50%">
+            </div>
+
+            <div class="mySlides">
+               <div class="numbertext">2 / 6</div>
+               <img src="/lightboximages/antonio-stappaerts-2.jpg" style="width:50%">
+            </div>
+
+            <div class="mySlides">
+               <div class="numbertext">3 / 6</div>
+               <img src="/lightboximages/antonio-stappaerts-3.jpg" style="width:50%">
+            </div>
+
+            <div class="mySlides">
+               <div class="numbertext">4 / 6</div>
+               <img src="/lightboximages/antonio-stappaerts-4.jpg" style="width:50%">
+            </div>
+
+            <div class="mySlides">
+               <div class="numbertext">5 / 6</div>
+               <img src="/lightboximages/antonio-stappaerts-5.jpg" style="width:50%">
+            </div>
+
+            <div class="mySlides">
+               <div class="numbertext">6 / 6</div>
+               <img src="/lightboximages/antonio-stappaerts-6.jpg" style="width:50%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+               <p id="caption"></p>
+            </div>
+
+
+            <div class="column-lightbox">
+               <img class="demo cursor" src="/lightboximages/antonio-stappaerts-1.jpg" style="width:25%"
+                  onclick="currentSlide(1)" alt="Nature and sunrise">
+            </div>
+            <div class="column-lightbox">
+               <img class="demo cursor" src="/lightboximages/antonio-stappaerts-2.jpg" style="width:25%"
+                  onclick="currentSlide(2)" alt="Snow">
+            </div>
+            <div class="column-lightbox">
+               <img class="demo cursor" src="/lightboximages/antonio-stappaerts-3.jpg" style="width:25%"
+                  onclick="currentSlide(3)" alt="Mountains and fjords">
+            </div>
+            <div class="column-lightbox">
+               <img class="demo cursor" src="/lightboximages/antonio-stappaerts-4.jpg" style="width:25%"
+                  style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+            </div>
+            <div class="column-lightbox">
+               <img class="demo cursor" src="/lightboximages/antonio-stappaerts-5.jpg" style="width:25%"
+                  style="width:100%" onclick="currentSlide(5)" alt="Northern Lights">
+            </div>
+            <div class="column-lightbox">
+               <img class="demo cursor" src="/lightboximages/antonio-stappaerts-6.jpg" style="width:25%"
+                  style="width:100%" onclick="currentSlide(6)" alt="Northern Lights">
+            </div>
+         </div>
+      </div>
+      <script src="/script/script.js"></script>
+   </div>
+
+</body>
+
+</html>
